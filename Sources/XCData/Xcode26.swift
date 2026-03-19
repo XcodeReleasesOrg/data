@@ -12,6 +12,53 @@ let xcodes26: Array<Xcode> = [
     
     Xcode(name: "Xcode (Apple Silicon)",
           number: "26.4",
+          build: "17E192",
+          releaseKind: .releaseCandidate(1),
+          date: (2026, 03, 18),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.4", build: "25E236"),
+            .iOS(number: "26.4", build: "23E237"),
+            .watchOS(number: "26.4", build: "23T238"),
+            .tvOS(number: "26.4", build: "23L236"),
+            .visionOS(number: "26.4", build: "23O238")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.0.123.102"),
+            .swift(number: "6.3", build: "6.3.0.123.5")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.4_Release_Candidate/Xcode_26.4_Release_Candidate_Apple_silicon.xip",
+                   architectures: [.arm64],
+                   sha1: "7f5c126b73f7232d0aee81100beb64678c0af119"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_4-release-notes")
+          ]),
+    
+    Xcode(number: "26.4",
+          build: "17E192",
+          releaseKind: .releaseCandidate(1),
+          date: (2026, 03, 18),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.4", build: "25E236"),
+            .iOS(number: "26.4", build: "23E237"),
+            .watchOS(number: "26.4", build: "23T238"),
+            .tvOS(number: "26.4", build: "23L236"),
+            .visionOS(number: "26.4", build: "23O238")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.0.123.102"),
+            .swift(number: "6.3", build: "6.3.0.123.5")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.4_Release_Candidate/Xcode_26.4_Release_Candidate_Universal.xip",
+                   architectures: [.arm64, .x86_64],
+                   sha1: "daaa962c0f7a42e890cb75743f8b04b4fe1ea1fb"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_4-release-notes")
+          ]),
+    
+    Xcode(name: "Xcode (Apple Silicon)",
+          number: "26.4",
           build: "17E5179g",
           releaseKind: .beta(3),
           date: (2026, 03, 09),
