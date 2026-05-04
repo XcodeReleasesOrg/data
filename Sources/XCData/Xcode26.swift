@@ -12,6 +12,194 @@ let xcodes26: Array<Xcode> = [
     
     Xcode(name: "Xcode (Apple Silicon)",
           number: "26.5",
+          build: "17F42",
+          releaseKind: .releaseCandidate(1),
+          date: (2026, 05, 4),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.5", build: "25F70"),
+            .iOS(number: "26.5", build: "23F73"),
+            .watchOS(number: "26.5", build: "23T570"),
+            .tvOS(number: "26.5", build: "23L470"),
+            .visionOS(number: "26.5", build: "23O469")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.1.1.101"),
+            .swift(number: "6.3.2", build: "6.3.2.1.108")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.5_Release_Candidate/Xcode_26.5_Release_Candidate_Apple_silicon.xip",
+                   architectures: [.arm64],
+                   sha1: "a6d5be1576f29c6cade29c4caea5efa1473c072c"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_5-release-notes")
+          ]),
+    
+    Xcode(number: "26.5",
+          build: "17F42",
+          releaseKind: .releaseCandidate(1),
+          date: (2026, 05, 4),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.5", build: "25F70"),
+            .iOS(number: "26.5", build: "23F73"),
+            .watchOS(number: "26.5", build: "23T570"),
+            .tvOS(number: "26.5", build: "23L470"),
+            .visionOS(number: "26.5", build: "23O469")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.1.1.101"),
+            .swift(number: "6.3.2", build: "6.3.2.1.108")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.5_Release_Candidate/Xcode_26.5_Release_Candidate_Universal.xip",
+                   architectures: [.arm64, .x86_64],
+                   sha1: "106c0b0f24f828aa9a5224a384df02dcc36c8581"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_5-release-notes")
+          ]),
+    
+    Xcode(name: "Xcode (Apple Silicon)",
+          number: "26.5",
+          build: "17F5032f",
+          releaseKind: .beta(3),
+          date: (2026, 04, 27),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.5", build: "25F5066a"),
+            .iOS(number: "26.5", build: "23F5067a"),
+            .watchOS(number: "26.5", build: "23T5566a"),
+            .tvOS(number: "26.5", build: "23L5467a"),
+            .visionOS(number: "26.5", build: "23O5466a")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.1.1.101"),
+            .swift(number: "6.3.2", build: "6.3.2.1.108")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.5_beta_3/Xcode_26.5_beta_3_Apple_silicon.xip",
+                   architectures: [.arm64],
+                   sha1: "938e02cf64acb969916b7f3a44343533129a6fa9"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_5-release-notes")
+          ]),
+    
+    Xcode(number: "26.5",
+          build: "17F5032f",
+          releaseKind: .beta(3),
+          date: (2026, 04, 27),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.5", build: "25F5066a"),
+            .iOS(number: "26.5", build: "23F5067a"),
+            .watchOS(number: "26.5", build: "23T5566a"),
+            .tvOS(number: "26.5", build: "23L5467a"),
+            .visionOS(number: "26.5", build: "23O5466a")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.1.1.101"),
+            .swift(number: "6.3.2", build: "6.3.2.1.108")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.5_beta_3/Xcode_26.5_beta_3_Universal.xip",
+                   architectures: [.arm64, .x86_64],
+                   sha1: "0d980c143c9d15ba5727bfe7a882d123e41d4bfb"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_5-release-notes")
+          ]),
+    
+    Xcode(name: "Xcode (Apple Silicon)",
+          number: "26.4.1",
+          build: "17E202",
+          releaseKind: .release,
+          date: (2026, 04, 16),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.4.1", build: "25E251"),
+            .iOS(number: "26.4.1", build: "23E252"),
+            .watchOS(number: "26.4", build: "23T238"),
+            .tvOS(number: "26.4", build: "23L236"),
+            .visionOS(number: "26.4", build: "23O248")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.0.123.102"),
+            .swift(number: "6.3.1", build: "6.3.1.1.2")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.4.1/Xcode_26.4.1_Apple_silicon.xip",
+                   architectures: [.arm64],
+                   sha1: "0862891593066c47a6f152814d817e84f09e1813"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_4_1-release-notes")
+          ]),
+    
+    Xcode(number: "26.4.1",
+          build: "17E202",
+          releaseKind: .release,
+          date: (2026, 04, 16),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.4.1", build: "25E251"),
+            .iOS(number: "26.4.1", build: "23E252"),
+            .watchOS(number: "26.4", build: "23T238"),
+            .tvOS(number: "26.4", build: "23L236"),
+            .visionOS(number: "26.4", build: "23O248")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.0.123.102"),
+            .swift(number: "6.3.1", build: "6.3.1.1.2")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.4.1/Xcode_26.4.1_Universal.xip",
+                   architectures: [.arm64, .x86_64],
+                   sha1: "863cb396fa28c2f8a820365537bd0b01f0d3e352"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_4_1-release-notes")
+          ]),
+    
+    Xcode(name: "Xcode (Apple Silicon)",
+          number: "26.5",
+          build: "17F5022i",
+          releaseKind: .beta(2),
+          date: (2026, 04, 13),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.5", build: "25F5053d"),
+            .iOS(number: "26.5", build: "23F5054d"),
+            .watchOS(number: "26.5", build: "23T5553d"),
+            .tvOS(number: "26.5", build: "23L5455c"),
+            .visionOS(number: "26.5", build: "23O5453d")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.1.1.101"),
+            .swift(number: "6.3.2", build: "6.3.2.1.103")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.5_beta_2/Xcode_26.5_beta_2_Apple_silicon.xip",
+                   architectures: [.arm64],
+                   sha1: "879eda380b87734272674dd5dd277efac36051cd"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_5-release-notes")
+          ]),
+    
+    Xcode(number: "26.5",
+          build: "17F5022i",
+          releaseKind: .beta(2),
+          date: (2026, 04, 13),
+          requires: "26.2",
+          sdks: [
+            .macOS(number: "26.5", build: "25F5053d"),
+            .iOS(number: "26.5", build: "23F5054d"),
+            .watchOS(number: "26.5", build: "23T5553d"),
+            .tvOS(number: "26.5", build: "23L5455c"),
+            .visionOS(number: "26.5", build: "23O5453d")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.1.1.101"),
+            .swift(number: "6.3.2", build: "6.3.2.1.103")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_26.5_beta_2/Xcode_26.5_beta_2_Universal.xip",
+                   architectures: [.arm64, .x86_64],
+                   sha1: "3eef0db3ee79b1aafa5db28e613e8a5b76df0b6e"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-26_5-release-notes")
+          ]),
+    
+    Xcode(name: "Xcode (Apple Silicon)",
+          number: "26.5",
           build: "17F5012f",
           releaseKind: .beta(1),
           date: (2026, 03, 30),
