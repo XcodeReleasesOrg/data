@@ -17,7 +17,7 @@ let xcodes27: Array<Xcode> = [
           requires: "26.6",
           sdks: [
             .macOS(number: "27.2", build: "26B118"),
-            .iOS(number: "27.2", build: "24B118"),
+            .iOS(number: "27.2", build: "24B8118"),
             .watchOS(number: "27.2", build: "24S118"),
             .tvOS(number: "27.2", build: "24K122"),
             .visionOS(number: "27.2", build: "24N120")
