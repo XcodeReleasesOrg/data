@@ -11,6 +11,29 @@ import XcodeReleases
 let xcodes27: Array<Xcode> = [
     
     Xcode(number: "27.2",
+          build: "27B52",
+          releaseKind: .release,
+          date: (2026, 10, 29),
+          requires: "26.6",
+          sdks: [
+            .macOS(number: "27.2", build: "26B118"),
+            .iOS(number: "27.2", build: "24B118"),
+            .watchOS(number: "27.2", build: "24S118"),
+            .tvOS(number: "27.2", build: "24K122"),
+            .visionOS(number: "27.2", build: "24N120")
+          ],
+          compilers: [
+            .clang(number: "21.0.0", build: "2100.4.1.1"),
+            .swift(number: "6.4.2", build: "6.4.2.1.9")
+          ],
+          links: [
+            .xcode("https://download.developer.apple.com/Developer_Tools/Xcode_27.2/Xcode_27.2.xip",
+                   architectures: [.arm64],
+                   sha1: "99f19f73742c872cde03d02628a058688a37f7a1"),
+            .notes("https://developer.apple.com/documentation/xcode-release-notes/xcode-27_2-release-notes")
+          ]),
+    
+    Xcode(number: "27.2",
           build: "27B48",
           releaseKind: .releaseCandidate(1),
           date: (2026, 10, 19),
